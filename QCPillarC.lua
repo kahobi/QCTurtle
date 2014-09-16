@@ -72,7 +72,8 @@ if (NumSect >= 2) then
 		if MENetwork then
 			turtle.select(IOMECon)
 			turtle.placeDown()
-		and if EnNetwork then
+		end
+		if EnNetwork then
 			turtle.select(IOEnCon)
 			turtle.placeDown()
 		end
