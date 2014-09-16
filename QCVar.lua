@@ -1,6 +1,13 @@
 NumSect = 0				--The number of sections to be built, colum by colum
 SectDim = 6				--7th segment in a section is shared, the start of the next.
 
+MENetwork = true
+EnNetwork = true
+FluidNetw = false
+Item_Netw = false
+RedNetwor = false
+Slot = 0
+						
 						--Inventory
 NetherQ = 16
 SmokedQ = 15
@@ -8,10 +15,14 @@ NetherF = 14
 SmokedF = 13
 IOMECon = 12
 IOEnCon = 11
+IOFlCon = 10
+IOItCon = 09
+IORECon = 08
 --
-
 --
---rint("Please specify the number of sections to be built. Recommended not to exceeed 10. "local NumSect = ..."")
+--
+--
+--print("Please specify the number of sections to be built. Recommended not to exceeed 10. "local NumSect = ..."")
 
 --print("Please specify if ME Conduit is to to be added, true/false "local MENCond = ..."")
 --	if MENCond ~= true or MENCond ~= false then
