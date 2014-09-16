@@ -18,6 +18,7 @@ function SDBlock ()
 end
 
 function SDConduit ()
+	Slot = turtle.getSelectedSlot()
 	for i = 1 , SectDim do
 		turtle.select(Slot)
 		turtle.forward()
@@ -25,16 +26,20 @@ function SDConduit ()
 		if MENetwork then
 			turtle.select(IOMECon)
 			turtle.placeDown()
-		and if EnNetwork then
+		end
+		if EnNetwork then
 			turtle.select(IOEnCon)
 			turtle.placeDown()
-		and if FluidNetw then
+		end
+		if FluidNetw then
 			turtle.select(IOFlCon)
 			turtle.placeDown()
-		and if Item_Netw then
+		end
+		if Item_Netw then
 			turtle.select(IOItCon)
 			turtle.placeDown()
-		and if RedNetwor then
+		end
+		if RedNetwor then
 			turtle.select(IORECon)
 			turtle.placeDown()
 		end
@@ -52,21 +57,25 @@ function SD1Conduit ()
 	turtle.forward()
 	turtle.placeDown()
 	if MENetwork then
-		turtle.select(IOMECon)
-		turtle.placeDown()
-	and if EnNetwork then
-		turtle.select(IOEnCon)
-		turtle.placeDown()
-	and if FluidNetw then
-		turtle.select(IOFlCon)
-		turtle.placeDown()
-	and if Item_Netw then
-		turtle.select(IOItCon)
-		turtle.placeDown()
-	and if RedNetwor then
-		turtle.select(IORECon)
-		turtle.placeDown()
-	end
+			turtle.select(IOMECon)
+			turtle.placeDown()
+		end
+		if EnNetwork then
+			turtle.select(IOEnCon)
+			turtle.placeDown()
+		end
+		if FluidNetw then
+			turtle.select(IOFlCon)
+			turtle.placeDown()
+		end
+		if Item_Netw then
+			turtle.select(IOItCon)
+			turtle.placeDown()
+		end
+		if RedNetwor then
+			turtle.select(IORECon)
+			turtle.placeDown()
+		end
 end
 
 function SDPillarB ()
@@ -77,25 +86,32 @@ function SDPillarB ()
 end
 
 function SDPillarC ()
+	Slot = turtle.getSelectedSlot()
 	for i = 1 , SectDim do
 		turtle.placeDown()
 		if MENetwork then
 			turtle.select(IOMECon)
 			turtle.placeDown()
-		and if EnNetwork then
+		end
+		if EnNetwork then
+			
 			turtle.select(IOEnCon)
 			turtle.placeDown()
-		and if FluidNetw then
+		end
+		if FluidNetw then
 			turtle.select(IOFlCon)
 			turtle.placeDown()
-		and if Item_Netw then
+		end
+		if Item_Netw then
 			turtle.select(IOItCon)
 			turtle.placeDown()
-		and if RedNetwor then
+		end
+		if RedNetwor then
 			turtle.select(IORECon)
 			turtle.placeDown()
 		end
 		turtle.up()
+		turtle.select(Slot)
 	end
 end
 
