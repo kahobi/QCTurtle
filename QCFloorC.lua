@@ -42,7 +42,8 @@ if (NumSect >= 2) then
 			if MENetwork then
 				turtle.select(IOMECon)
 				turtle.placeDown()
-			and if EnNetwork then
+			end
+			if EnNetwork then
 				turtle.select(IOEnCon)
 				turtle.placeDown()
 			end
@@ -111,7 +112,8 @@ for i = 1 , SectDim do								--Colum 4, - Centre Nether --Send
 	if MENetwork then
 		turtle.select(IOMECon)
 		turtle.placeDown()
-	and if EnNetwork then
+	end
+	if EnNetwork then
 		turtle.select(IOEnCon)
 		turtle.placeDown()
 	end
@@ -129,7 +131,8 @@ turtle.placeDown()
 if MENetwork then
 	turtle.select(IOMECon)
 	turtle.placeDown()
-and if EnNetwork then
+end
+if EnNetwork then
 	turtle.select(IOEnCon)
 	turtle.placeDown()
 end
@@ -155,7 +158,8 @@ turtle.placeDown()
 	if MENetwork then
 		turtle.select(IOMECon)
 		turtle.placeDown()
-	and if EnNetwork then
+	end
+	if EnNetwork then
 		turtle.select(IOEnCon)
 		turtle.placeDown()
 	end
