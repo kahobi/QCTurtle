@@ -8,7 +8,10 @@ dofile("QCVar.lua")
 --qc.SDPillarC()
 --qc.SDColumR()
 --qc.SDColumL()
---qc.ReturnStart()
+--qc.DimBack()
+--qc.DimForward()
+--qc.DimDown()
+--qc.DimUp
 --
 function SDBlock ()
 	for i = 1 , SectDim do
@@ -94,7 +97,6 @@ function SDPillarC ()
 			turtle.placeDown()
 		end
 		if EnNetwork then
-			
 			turtle.select(IOEnCon)
 			turtle.placeDown()
 		end
@@ -129,8 +131,26 @@ function ColumL ()
 	turtle.turnLeft()
 end
 
-function ReturnStart ()
+function DimBack ()
 	for i = 1 , SectDim do
 		turtle.back()
+	end
+end
+
+function DimForward ()
+	for i = 1 , SectDim do
+		turtle.forward()
+	end
+end
+
+function DimDown ()
+	for i = 1 , SectDim do
+		turtle.down()
+	end
+end
+
+function DimUp ()
+	for i = 1 , SectDim do
+		turtle.up()
 	end
 end
